@@ -1,0 +1,29 @@
+{%extends 'accounts/base.html'%}
+{% block content%}
+
+<main>
+        <section class="hero">
+            <h1>Welcome to ShopEasy</h1>
+            <p>Quality products at affordable prices.</p>
+        </section>
+        <section class="products">
+           {% for product in posts%}
+            <div class="product-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img "src={{product.image.url}}">
+                    </div>
+                    <div class="product-details">
+                        <h3>{{product.name}}</h3>
+                        <h4>{{product.description}}</h4>
+                        <p>{{product.category}}</p>
+                        <div class="price">{{product.price}}</div>
+                    </div>
+                </div>
+            {% endfor %}   
+                
+            </div>
+        </section>
+    </main>
+
+{% endblock%}

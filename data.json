@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Air Max",
+      "description": "Comfortable running shoes for everyday use.",
+      "price": 4999.99,
+      "image": "products/nike-air-max.jpg",
+      "stock": 25,
+      "category": "Shoes",
+      "is_available": true
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S25",
+      "description": "Modern smartphone with a powerful processor and excellent camera.",
+      "price": 74999.00,
+      "image": "products/samsung-galaxy-s25.jpg",
+      "stock": 10,
+      "category": "Mobiles",
+      "is_available": true
+    },
+    {
+      "id": 3,
+      "name": "HP Pavilion 15",
+      "description": "Powerful laptop suitable for programming and everyday productivity.",
+      "price": 65999.00,
+      "image": "products/hp-pavilion-15.jpg",
+      "stock": 8,
+      "category": "Laptops",
+      "is_available": true
+    },
+    {
+      "id": 4,
+      "name": "Sony WH-1000XM5",
+      "description": "Wireless headphones with active noise cancellation.",
+      "price": 29999.00,
+      "image": "products/sony-wh1000xm5.jpg",
+      "stock": 15,
+      "category": "Headphones",
+      "is_available": true
+    },
+    {
+      "id": 5,
+      "name": "Logitech MX Master 3S",
+      "description": "Wireless mouse designed for productivity and comfortable long-term use.",
+      "price": 8999.00,
+      "image": "products/logitech-mx-master-3s.jpg",
+      "stock": 20,
+      "category": "Accessories",
+      "is_available": true
+    }
+  ]
+}
