@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.decorators import api_view
 from rest_framework import status
-from rest_framework import generics
+from rest_framework import generics,mixins
 
 # class Products(APIView):
 
@@ -80,15 +80,56 @@ from rest_framework import generics
 
 ##### generic views for managing the  manging the CURd ##############
 
-class Products_listing(generics.ListAPIView):
-    queryset = Product.objects.all()
-    serializer_class = product_serializer
+# class Products_listing(generics.ListAPIView):
+#     queryset = Product.objects.all()
+#     serializer_class = product_serializer
 
 
-class product_create(generics.CreateAPIView):
+# class product_create(generics.CreateAPIView):
+#     queryset = Product.objects.all()
+#     serializer_class = product_serializer
+# class product_detail(generics.RetrieveUpdateDestroyAPIView):
+#     queryset = Product.objects.all()
+#     serializer_class = product_serializer
+#     lookup_field='pk'
+
+class Products(
+        mixins.ListModelMixin,
+        mixins.CreateModelMixin,
+        mixins.RetrieveModelMixin,
+        mixins.DestroyModelMixin,
+        mixins.UpdateModelMixin,
+        generics.GenericAPIView
+    ):
+
     queryset = Product.objects.all()
     serializer_class = product_serializer
-class product_detail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Product.objects.all()
-    serializer_class = product_serializer
-    lookup_field='pk'
+    lookup_field = 'pk'
+
+    # GET
+    def get(self, request, *args, **kwargs):
+        pk = kwargs.get('pk')
+
+        if pk is not None:
+            return self.retrieve(request, *args, **kwargs)
+
+        return self.list(request, *args, **kwargs)
+
+    # POST
+    def post(self, request, *args, **kwargs):
+        return self.create(request, *args, **kwargs)
+
+    # PUT
+    def put(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
+
+    # PATCH
+    def patch(self, request, *args, **kwargs):
+        return self.partial_update(request, *args, **kwargs)
+
+    # DELETE
+    def delete(self, request, *args, **kwargs):
+        return self.destroy(request, *args, **kwargs)
+               
+
+               
