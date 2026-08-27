@@ -8,7 +8,7 @@ from rest_framework.decorators import api_view
 from rest_framework import status
 from rest_framework import generics,mixins
 from rest_framework.viewsets import ModelViewSet
-
+from .pagination import CustompaginationForProducts
 # class Products(APIView):
 
 #     def get(self, request,pk=None):
@@ -175,4 +175,5 @@ from rest_framework.viewsets import ModelViewSet
 class Product_viewsets(ModelViewSet):
     queryset=Product.objects.all()
     serializer_class=product_serializer
+    
     lookup_field='pk'
