@@ -7,6 +7,7 @@ from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.decorators import api_view
 from rest_framework import status
 from rest_framework import generics,mixins
+from rest_framework.viewsets import ModelViewSet
 
 # class Products(APIView):
 
@@ -93,43 +94,85 @@ from rest_framework import generics,mixins
 #     serializer_class = product_serializer
 #     lookup_field='pk'
 
-class Products(
-        mixins.ListModelMixin,
-        mixins.CreateModelMixin,
-        mixins.RetrieveModelMixin,
-        mixins.DestroyModelMixin,
-        mixins.UpdateModelMixin,
-        generics.GenericAPIView
-    ):
+# class Products(
+#         mixins.ListModelMixin,
+#         mixins.CreateModelMixin,
+#         mixins.RetrieveModelMixin,
+#         mixins.DestroyModelMixin,
+#         mixins.UpdateModelMixin,
+#         generics.GenericAPIView
+#     ):
 
-    queryset = Product.objects.all()
-    serializer_class = product_serializer
-    lookup_field = 'pk'
+#     queryset = Product.objects.all()
+#     serializer_class = product_serializer
+#     lookup_field = 'pk'
 
-    # GET
-    def get(self, request, *args, **kwargs):
-        pk = kwargs.get('pk')
+#     # GET
+#     def get(self, request, *args, **kwargs):
+#         pk = kwargs.get('pk')
 
-        if pk is not None:
-            return self.retrieve(request, *args, **kwargs)
+#         if pk is not None:
+#             return self.retrieve(request, *args, **kwargs)
 
-        return self.list(request, *args, **kwargs)
+#         return self.list(request, *args, **kwargs)
 
-    # POST
-    def post(self, request, *args, **kwargs):
-        return self.create(request, *args, **kwargs)
+#     # POST
+#     def post(self, request, *args, **kwargs):
+#         return self.create(request, *args, **kwargs)
 
-    # PUT
-    def put(self, request, *args, **kwargs):
-        return self.update(request, *args, **kwargs)
+#     # PUT
+#     def put(self, request, *args, **kwargs):
+#         return self.update(request, *args, **kwargs)
 
-    # PATCH
-    def patch(self, request, *args, **kwargs):
-        return self.partial_update(request, *args, **kwargs)
+#     # PATCH
+#     def patch(self, request, *args, **kwargs):
+#         return self.partial_update(request, *args, **kwargs)
 
-    # DELETE
-    def delete(self, request, *args, **kwargs):
-        return self.destroy(request, *args, **kwargs)
+#     # DELETE
+#     def delete(self, request, *args, **kwargs):
+#         return self.destroy(request, *args, **kwargs)
+
+
+# class Product_viewsets(ViewSet) :    
+    
+#     def list(self, request):
+#         qs=Product.objects.all()
+#         serializer=product_serializer(qs,many=True)
+#         return Response(serializer.data)
+
+#     def retrieve(self, request, pk=None):
+#         qs=Product.objects.get(pk=pk)
+#         serializer=product_serializer(qs,many=False)
+#         return Response(serializer.data)
+
+#     def create(self, request):
+#         serializer=product_serializer(data=request.data)
+#         if serializer.is_valid(raise_exception=True):
+#             serializer.save()
+#             return Response(serializer.data)
+#         return Response(serializer.errors)
+
+#     def update(self, request, pk=None):
+#        product=get_object_or_404(Product,pk=pk)
+#        serializer=product_serializer(product,data=request.data)
+#        return Response(serializer.data)
+
+#     def partial_update(self, request, pk=None):
+#         product=Product.object.get(pk=pk)
+#         serializer=product_serializer(product,data=request.data)
+#         return Response(serializer.data)
+ 
+#     def destroy(self, request, pk=None):
+#         qs=get_object_or_404(Product,pk=pk)
+#         qs.delete()
+#         # DELETE /products/1/
+#         return Response(
+#             {"message": f"Product {pk} deleted"},
+#             status=status.HTTP_204_NO_CONTENT
+#         )   
+
                
-
-               
+class Product_viewsets(ModelViewSet):
+    queryset=Product.objects.all()
+    serializer_class=product_serializer
+    lookup_field='pk'
