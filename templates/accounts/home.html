@@ -11,7 +11,9 @@
             <div class="product-container">
                 <div class="product-card">
                     <div class="product-image">
+                        {% if product.image.url  is not null%}
                         <img "src={{product.image.url}}">
+                        {%endif%}
                     </div>
                     <div class="product-details">
                         <h3>{{product.name}}</h3>

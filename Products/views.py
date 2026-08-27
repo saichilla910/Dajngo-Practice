@@ -9,6 +9,8 @@ from rest_framework import status
 from rest_framework import generics,mixins
 from rest_framework.viewsets import ModelViewSet
 from .pagination import CustompaginationForProducts
+from rest_framework.permissions import IsAuthenticatedOrReadOnly,IsAdminUser
+
 # class Products(APIView):
 
 #     def get(self, request,pk=None):
@@ -175,5 +177,6 @@ from .pagination import CustompaginationForProducts
 class Product_viewsets(ModelViewSet):
     queryset=Product.objects.all()
     serializer_class=product_serializer
+    permission_classes=[IsAuthenticatedOrReadOnly,IsAdminUser]
     
     lookup_field='pk'

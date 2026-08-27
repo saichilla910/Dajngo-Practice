@@ -3,6 +3,17 @@ from .forms import Register_form
 from django.shortcuts import redirect
 from django.contrib import messages 
 from django.contrib.auth import logout
+from django.contrib.auth.models import User
+
+from django.core.mail import send_mail
+
+send_mail(
+    "Django Test",
+    "Testing email delivery.",
+    "sai@gmail.com",
+    ["saichilla910@gmail.com"],
+    fail_silently=False,
+)
 # Create your views here.
 def register(request):
     if request.method == "POST":
@@ -24,3 +35,5 @@ def login(request):
 def logout_user(request):
     logout(request)
     return render(request,'auth/logout.html')
+
+

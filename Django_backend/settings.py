@@ -118,11 +118,7 @@ STATIC_URL = 'static/'
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
 
-MAILERS = {
-    'default': {
-        'BACKEND': 'django.core.mail.backends.console.EmailBackend',
-    },
-}
+
 
 LOGIN_URL='login'
 LOGIN_REDIRECT_URL='home'
@@ -155,3 +151,21 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 2,
 }
+
+
+## Resset Password Settings 
+
+MAILERS = {
+    "default": {
+        "BACKEND": "django.core.mail.backends.smtp.EmailBackend",
+        "OPTIONS": {
+            "host": "smtp.gmail.com",
+            "port": 587,
+            "username": "saichilla910@gmail.com",
+            "password": "dfuo dlls qexu xabn",
+            "use_tls": True,
+        },
+    },
+}
+
+DEFAULT_FROM_EMAIL = "saichilla910@gmail.com"
