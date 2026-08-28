@@ -1,3 +1,4 @@
+{% load socialaccount %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,9 @@
 
     <h1>Login into your account </h1>
     <form method='POST'>
+        <a href="{% provider_login_url 'google' %}">
+    Continue with Google
+</a>
     {% csrf_token %}
     {{form}}
     <button type="submit">Login </button>

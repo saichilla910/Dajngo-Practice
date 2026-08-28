@@ -41,6 +41,14 @@ INSTALLED_APPS = [
     'authentication',
     'Products',
     'rest_framework',
+    'django_filters',
+
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+
+    # Google provider
+    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -51,6 +59,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'Django_backend.urls'
@@ -150,6 +160,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 2,
+    'DEFAULT_FILTER_BACKEND':['django-filters.rest_framework.DjangoFiltersBackend']
+
 }
 
 
@@ -169,3 +181,10 @@ MAILERS = {
 }
 
 DEFAULT_FROM_EMAIL = "saichilla910@gmail.com"
+
+
+# for Social login by using the google anad git Hub Account facebook also 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]

@@ -10,7 +10,7 @@ from rest_framework import generics,mixins
 from rest_framework.viewsets import ModelViewSet
 from .pagination import CustompaginationForProducts
 from rest_framework.permissions import IsAuthenticatedOrReadOnly,IsAdminUser
-
+import django_filters
 # class Products(APIView):
 
 #     def get(self, request,pk=None):
@@ -177,6 +177,6 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly,IsAdminUser
 class Product_viewsets(ModelViewSet):
     queryset=Product.objects.all()
     serializer_class=product_serializer
-    permission_classes=[IsAuthenticatedOrReadOnly,IsAdminUser]
-    
+    permission_classes=[IsAuthenticatedOrReadOnly]
+    filterset_fields=['name']
     lookup_field='pk'
