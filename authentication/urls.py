@@ -1,6 +1,11 @@
 from django.urls import path,include
 from django.contrib.auth import views as auth_views
 from . import views as app_level_views
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+
 urlpatterns = [
     path('login/',auth_views.LoginView.as_view(template_name='auth/login.html'),name='login'),
      path('logout/', app_level_views.logout_user, name="logout"),
@@ -36,6 +41,18 @@ urlpatterns = [
             template_name='registration/password_reset_complete.html'
         ),
         name='password_reset_complete'
+    ),
+
+     path(
+        "api/token/",
+        TokenObtainPairView.as_view(),
+        name="token_obtain_pair",
+    ),
+
+    path(
+        "api/token/refresh/",
+        TokenRefreshView.as_view(),
+        name="token_refresh",
     ),
 
 ]

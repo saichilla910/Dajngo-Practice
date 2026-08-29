@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Welcome"
+msgstr "സ്വാഗതം"
+
+msgid "How are you?"
+msgstr "സുഖമാണോ?"
+
+msgid "Welcome to ShopEasy"
+msgstr "ShopEasy-ലേക്ക് സ്വാഗതം"
+
+msgid "Quality products at affordable prices."
+msgstr "മിതമായ നിരക്കിൽ ഗുണനിലവാരമുള്ള ഉൽപ്പന്നങ്ങൾ."
+
+msgid "Home"
+msgstr "ഹോം"
+
+msgid "Products"
+msgstr "ഉൽപ്പന്നങ്ങൾ"
+
+msgid "Categories"
+msgstr "വിഭാഗങ്ങൾ"
+
+msgid "About"
+msgstr "കുറിച്ച്"
+
+msgid "About Us"
+msgstr "ഞങ്ങളെക്കുറിച്ച്"
+
+msgid "Contact"
+msgstr "ബന്ധപ്പെടുക"
+
+msgid "Contact Us"
+msgstr "ഞങ്ങളെ ബന്ധപ്പെടുക"
+
+msgid "Cart"
+msgstr "കാർട്ട്"
+
+msgid "Login"
+msgstr "ലോഗിൻ"
+
+msgid "Register"
+msgstr "രജിസ്റ്റർ"
+
+msgid "Logout"
+msgstr "ലോഗൗട്ട്"
+
+msgid "Quick Links"
+msgstr "ദ്രുത ലിങ്കുകൾ"
+
+msgid "Customer Service"
+msgstr "ഉപഭോക്തൃ സേവനം"
+
+msgid "Shipping"
+msgstr "ഷിപ്പിംഗ്"
+
+msgid "Returns"
+msgstr "റിട്ടേൺസ്"
+
+msgid "Privacy Policy"
+msgstr "സ്വകാര്യതാ നയം"
+
+msgid "Your online destination for quality products at affordable prices."
+msgstr "മിതമായ നിരക്കിൽ ഗുണനിലവാരമുള്ള ഉൽപ്പന്നങ്ങൾക്കായുള്ള നിങ്ങളുടെ ഓൺലൈൻ കേന്ദ്രം."
+
+msgid "All Rights Reserved."
+msgstr "എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തം."

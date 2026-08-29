@@ -7,13 +7,7 @@ from django.contrib.auth.models import User
 
 from django.core.mail import send_mail
 
-send_mail(
-    "Django Test",
-    "Testing email delivery.",
-    "sai@gmail.com",
-    ["saichilla910@gmail.com"],
-    fail_silently=False,
-)
+
 # Create your views here.
 def register(request):
     if request.method == "POST":

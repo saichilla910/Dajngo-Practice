@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Welcome"
+msgstr "स्वागत है"
+
+msgid "How are you?"
+msgstr "आप कैसे हैं?"
+
+msgid "Welcome to ShopEasy"
+msgstr "ShopEasy में आपका स्वागत है"
+
+msgid "Quality products at affordable prices."
+msgstr "किफायती दामों पर गुणवत्ता वाले उत्पाद।"
+
+msgid "Home"
+msgstr "होम"
+
+msgid "Products"
+msgstr "उत्पाद"
+
+msgid "Categories"
+msgstr "श्रेणियाँ"
+
+msgid "About"
+msgstr "के बारे में"
+
+msgid "About Us"
+msgstr "हमारे बारे में"
+
+msgid "Contact"
+msgstr "संपर्क"
+
+msgid "Contact Us"
+msgstr "हमसे संपर्क करें"
+
+msgid "Cart"
+msgstr "कार्ट"
+
+msgid "Login"
+msgstr "लॉग इन"
+
+msgid "Register"
+msgstr "रजिस्टर"
+
+msgid "Logout"
+msgstr "लॉग आउट"
+
+msgid "Quick Links"
+msgstr "त्वरित लिंक"
+
+msgid "Customer Service"
+msgstr "ग्राहक सेवा"
+
+msgid "Shipping"
+msgstr "शिपिंग"
+
+msgid "Returns"
+msgstr "वापसी"
+
+msgid "Privacy Policy"
+msgstr "गोपनीयता नीति"
+
+msgid "Your online destination for quality products at affordable prices."
+msgstr "किफायती दामों पर गुणवत्ता वाले उत्पादों के लिए आपका ऑनलाइन गंतव्य।"
+
+msgid "All Rights Reserved."
+msgstr "सर्वाधिकार सुरक्षित।"

@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Welcome"
+msgstr "స్వాగతం"
+
+msgid "How are you?"
+msgstr "మీరు ఎలా ఉన్నారు?"
+
+msgid "Welcome to ShopEasy"
+msgstr "ShopEasy కి స్వాగతం"
+
+msgid "Quality products at affordable prices."
+msgstr "సరసమైన ధరలలో నాణ్యమైన ఉత్పత్తులు."
+
+msgid "Home"
+msgstr "హోమ్"
+
+msgid "Products"
+msgstr "ఉత్పత్తులు"
+
+msgid "Categories"
+msgstr "వర్గాలు"
+
+msgid "About"
+msgstr "గురించి"
+
+msgid "About Us"
+msgstr "మా గురించి"
+
+msgid "Contact"
+msgstr "సంప్రదించండి"
+
+msgid "Contact Us"
+msgstr "మమ్మల్ని సంప్రదించండి"
+
+msgid "Cart"
+msgstr "కార్ట్"
+
+msgid "Login"
+msgstr "లాగిన్"
+
+msgid "Register"
+msgstr "రిజిస్టర్"
+
+msgid "Logout"
+msgstr "లాగౌట్"
+
+msgid "Quick Links"
+msgstr "శీఘ్ర లింకులు"
+
+msgid "Customer Service"
+msgstr "కస్టమర్ సేవ"
+
+msgid "Shipping"
+msgstr "షిప్పింగ్"
+
+msgid "Returns"
+msgstr "రిటర్న్లు"
+
+msgid "Privacy Policy"
+msgstr "గోప్యతా విధానం"
+
+msgid "Your online destination for quality products at affordable prices."
+msgstr "సరసమైన ధరలలో నాణ్యమైన ఉత్పత్తుల కోసం మీ ఆన్‌లైన్ గమ్యస్థానం."
+
+msgid "All Rights Reserved."
+msgstr "సర్వ హక్కులు ప్రత్యేకించబడ్డాయి."

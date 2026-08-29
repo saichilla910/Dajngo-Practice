@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Welcome"
+msgstr "Welcome"
+
+msgid "How are you?"
+msgstr "How are you?"
+
+msgid "Welcome to ShopEasy"
+msgstr "Welcome to ShopEasy"
+
+msgid "Quality products at affordable prices."
+msgstr "Quality products at affordable prices."
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Products"
+msgstr "Products"
+
+msgid "Categories"
+msgstr "Categories"
+
+msgid "About"
+msgstr "About"
+
+msgid "About Us"
+msgstr "About Us"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Contact Us"
+msgstr "Contact Us"
+
+msgid "Cart"
+msgstr "Cart"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Register"
+msgstr "Register"
+
+msgid "Logout"
+msgstr "Logout"
+
+msgid "Quick Links"
+msgstr "Quick Links"
+
+msgid "Customer Service"
+msgstr "Customer Service"
+
+msgid "Shipping"
+msgstr "Shipping"
+
+msgid "Returns"
+msgstr "Returns"
+
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+msgid "Your online destination for quality products at affordable prices."
+msgstr "Your online destination for quality products at affordable prices."
+
+msgid "All Rights Reserved."
+msgstr "All Rights Reserved."
